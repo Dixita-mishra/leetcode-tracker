@@ -1,0 +1,92 @@
+body{
+    margin:0;
+    padding:20px;
+    box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+.container {
+    max-width: 800px;
+    margin:0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.streak {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.streak h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#streakCounter {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.inputSection {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#problem-input {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#problem-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 15px 30px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+.problemList h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#problemList {
+    list-style: none;
+}
+
+#problemList li {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 5px solid #667eea;
+}
