@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Leetcode Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>My Leetcode Tracker</h1>
+        <div class="streak">
+            <h2>Current Streak</h2>
+            <span id="streakCounter">0</span>days🔥
+        </div>
+        <div class="inputSection">
+            <input type="text" id="problem-input" placeholder="Enter problem name (ex: Two Sum)">
+            <button onclick="addProblem()">Add Attempted</button>
+        </div>
+        <div class="problemList">
+            <h2>Attempted Problems</h2>
+            <ul id="problemList"></ul>  
+        </div> 
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
