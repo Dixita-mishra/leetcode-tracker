@@ -21,7 +21,26 @@
             <h2>Attempted Problems</h2>
             <ul id="problemList"></ul>  
         </div> 
+   
+    <div class="codeEditor">
+    <h2>💻 Solution Comparison</h2>
+    <div class="editor-tabs">
+        <button class="tab active" onclick="switchTab('original')">Original Solution</button>
+        <button class="tab" onclick="switchTab('current')">Current Attempt</button>
+        <button class="tab" onclick="switchTab('diff')">Compare</button>
     </div>
+    
+    <textarea id="originalCode" class="code-area" placeholder="Original solution will appear here..."></textarea>
+    <textarea id="currentCode" class="code-area" placeholder="Write your revised solution here..."></textarea>
+    <div id="diffView" class="diff-view" style="display: none;"></div>
+    
+    <div class="editor-actions">
+        <button onclick="saveOriginalSolution()" style="background: #10b981;">Save Original</button>
+        <button onclick="compareSolutions()" style="background: #f59e0b;">Compare Solutions</button>
+        <button onclick="clearCurrent()" style="background: #ef4444;">Clear Current</button>
+    </div>
+</div>
+ </div>
     <script src="script.js"></script>
 </body>
 </html>
